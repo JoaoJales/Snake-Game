@@ -30,7 +30,7 @@ int fase1(estatisticas_t *pontuacao){
     comida.y = rand() % (ALTURA -2) + 1;
     
     
-    while (pontos != 1)
+    while (pontos != 5)
     {   
         Sleep(150);
         system("cls");
@@ -90,7 +90,6 @@ int fase1(estatisticas_t *pontuacao){
         if (direcao_cobra == 'a') proximoX --;
         if (direcao_cobra == 'd') proximoX++;
         
-        // Verificar se bateu nas bordas
         
         // Verifica se a cobra atravessou as bordas e reaparece do outro lado
         if (proximoX <= 0) proximoX = LARGURA - 2;           
@@ -127,7 +126,7 @@ int fase1(estatisticas_t *pontuacao){
     pontuacao->atual += pontos;
     if (pontuacao->atual > pontuacao->maior) pontuacao->maior = pontuacao->atual;
 
-    if (pontos == 1){
+    if (pontos == 5){
         system("cls");
         printf("\n\n\tFASE COMPLETA!\n");
         printf("\tCARREGANDO... ");
