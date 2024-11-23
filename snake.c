@@ -244,35 +244,35 @@ void iniciar_jogo(){
     int situacao;
     pontuacao.atual = 0;
 
-    carregar_mapa("../fase1.txt");
+    carregar_mapa("fases/fase1.txt");
     situacao = jogo(&pontuacao);
     if (situacao == 0){
         game_over();
         return;
     }
 
-    carregar_mapa("../fase2.txt");
+    carregar_mapa("fases/fase2.txt");
     situacao = jogo(&pontuacao);
     if (situacao == 0){
         game_over();
         return;
     }
 
-    carregar_mapa("../fase3.txt");
+    carregar_mapa("fases/fase3.txt");
     situacao = jogo(&pontuacao);
     if (situacao == 0){
         game_over();
         return;
     }
 
-    carregar_mapa("../fase4.txt");
+    carregar_mapa("fases/fase4.txt");
     situacao = jogo(&pontuacao);
     if (situacao == 0){
         game_over();
         return;
     }
 
-    carregar_mapa("../fase5.txt");
+    carregar_mapa("fases/fase5.txt");
     situacao = jogo(&pontuacao);
     if (situacao == 0){
         game_over();
