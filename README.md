@@ -13,6 +13,10 @@ Este projeto foi feito em linguagem C e desenvolvido durante a matéria de Algor
 - 2: É possível bater no próprio corpo.
 - 3, 4, 5: Não é possível bater em lugar algum, existe obstáculos no mapa, velocidade aumentada.
 
+### Como rodar (CMD)
+- gcc -o jogo.exe snake.c
+- jogo.exe
+
 ### Participantes
 - João Ricardo Jales Cirino
 - Felipe Lima Duarte
