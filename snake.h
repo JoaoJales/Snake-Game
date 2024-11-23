@@ -1,8 +1,8 @@
 #ifndef SNAKE_H
 #define SNAKE_H
 
-#define LARGURA  40
-#define ALTURA 20
+#define LARGURA_MAX 40
+#define ALTURA_MAX 20
 
 typedef struct cobra{
     int x;
@@ -23,13 +23,19 @@ typedef struct estatisticas{
 
 cobra_t *cobra(int x, int y);
 
-void Tela_Inicial();
-void jogar();
-int fase1();
-void game_over();
-void mostrar_estatisticas();
-void como_jogar();
+void carregar_mapa(const char *arquivo_fase);
 
+void gerarComida(comida_t *comida);
+
+void Tela_Inicial();
+
+void jogar();
+
+void game_over();
+
+void mostrar_estatisticas();
+
+void como_jogar();
 
 
 #endif
